@@ -31,10 +31,24 @@ public class PopupController
 			myAge = -9999999;
 		}
 		
+		while(!isInteger(temp))
+		{
+			temp = myPopups.grabAnswer("Type in a positive integer for your age");
+		}
+		
 		myPopups.showResponse("You typed " + myAge);
 		
+		if(isDouble(tempWeight))
+		{
+			
+		}
+		else
+		{
+			myWeight = -9999.99;
+		}
+		
 		String tempWeight = myPopups.grabAnswer("Type in your weight");
-		double myWeight = Double.parseDouble(tempWeight);
+		 myWeight = Double.parseDouble(tempWeight);
 		myPopups.showResponse("You typed " + myWeight);
 		
 		
